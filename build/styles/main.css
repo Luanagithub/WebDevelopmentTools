@@ -1,0 +1,187 @@
+@font-face {
+  font-family: 'Muli';
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/muli/v28/7Aujp_0qiz-afTfcIyoiGtm2P0wG05Fz4eqVxg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Muli';
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/muli/v28/7Aujp_0qiz-afTfcIyoiGtm2P0wG03Z04eqVxg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/muli/v28/7Aulp_0qiz-aVz7u3PJLcUMYOFnOkEk30e0.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/muli/v28/7Aulp_0qiz-aVz7u3PJLcUMYOFkpl0k30e0.ttf) format('truetype');
+}
+/* Variáveis */
+/* Mixins */
+/* Escapings */
+/* Terceira Parte */
+body {
+  background-image: url(images/1.png);
+  transition: background-image 3s ease-in-out;
+  background-position: 0 0;
+  animation: deslocamento 20s linear infinite alternate-reverse;
+  background-size: cover;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 10px;
+  font-family: "Muli", sans-serif;
+}
+header {
+  top: 0;
+  left: 0;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.2s ease-in-out;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0%;
+  margin: 0%;
+  cursor: pointer;
+}
+header .branding {
+  padding-left: 5%;
+  transition: all 3s ease-in-out;
+}
+header .branding img:hover {
+  cursor: pointer;
+}
+.products {
+  text-align: center;
+  margin-top: 40px;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: repeat(3, 30.8%);
+  column-gap: 3%;
+  row-gap: 1%;
+  border-radius: 6px;
+  width: 100%;
+  padding: 15px;
+  transition: all 0.2s ease-in-out;
+}
+.product-item {
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.2s ease-in-out;
+  border-radius: 6px;
+  height: 80%;
+  transform-style: preserve-3d;
+  background-color: #ffffff;
+}
+.product-item:hover {
+  position: relative;
+  transition: all 2s linear;
+  cursor: pointer;
+  box-shadow: 0 15px 12px rgba(255, 255, 255, 0.3);
+  background-image: url(images/1.png);
+  transition-delay: 3s;
+}
+.product-item p:hover {
+  /* Adicione o estilo desejado */
+}
+li {
+  padding: 20px;
+}
+li h2,
+li p {
+  padding: 10px;
+}
+.product-item img {
+  width: 10%;
+  transition: all 0.5s ease-in-out;
+  border-radius: 6px;
+}
+.product-item img:hover {
+  width: 100%;
+}
+/*OBS*/
+h2 {
+  text-align: center;
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 10px;
+  font-size: medium;
+}
+.container {
+  border: 5px solid rgba(255, 255, 255, 0.3);
+}
+.product-item {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.menu li {
+  width: 25%;
+  display: inline-block;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.product-item p {
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px;
+  margin-bottom: 45px;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+.product-item p:hover {
+  /* Adicione o estilo desejado */
+}
+#img1:hover {
+  top: -5px;
+}
+.product-button {
+  color: #000000;
+  border-radius: 5em;
+  transition: all 0.5s linear;
+  padding: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.product-button:hover {
+  background-image: url(images/carrinho.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  text-shadow: none;
+  color: transparent;
+  background-color: #e7e8ed;
+  background-size: 50px;
+  transition-delay: 0.5s;
+  transition-property: background-color;
+}
+/* @breakpoint-tablet */
+@media only screen and (max-width: 768px) {
+  .products {
+    grid-template-columns: repeat(2, 45%);
+  }
+  body {
+    background-image: url(images/2.jpg);
+  }
+}
+/* @breakpoint-mobile */
+@media only screen and (max-width: 480px) {
+  .products {
+    grid-template-columns: repeat(1, 90%);
+  }
+  body {
+    background-image: url(images/2.jpg);
+  }
+}
