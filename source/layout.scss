@@ -1,0 +1,11 @@
+@media screen and (max-width: 768px) {
+    .products {
+        grid-template-columns: repeat(2, 45%); /* Alterado para porcentagem */
+    }
+    }
+    
+    @media screen and (max-width: 480px) {
+    .products {
+        grid-template-columns: repeat(1, 90%); /* Alterado para porcentagem */
+    }
+    }

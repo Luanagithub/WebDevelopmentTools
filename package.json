@@ -1,0 +1,22 @@
+{
+  "name": "exercicio",
+  "version": "1.0.0",
+  "description": "ex de sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "teste",
+    "sass": "sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git"
+  },
+  "keywords": [
+    "und"
+  ],
+  "author": "...",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.63.6"
+  }
+}
