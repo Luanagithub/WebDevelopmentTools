@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site</title>
+<!--Código Script-->
+
+    
+    <link rel="stylesheet" href="style.min.css">
+    <link rel="stylesheet" href="piano.min.css">
+
+    <link rel="icon" href="images/cat (1).png" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style copy.less">
+</head>
+
+<body>
+<!---->
+<!--Separando-->
+<section id="header" style="overflow-y: hidden;">
+
+    <div class="wrapper" style="width: 100vw;" aria-label="Casio PT-1 Keyboard illustration made with HTML and CSS">
+        <div class="casio" style="width: 100vw;" aria-hidden="true">
+            <div class="speaker" style="width: 100vw;"></div>
+            <div class="logo" style="padding-left: 30px;">
+                <img src="images/cat.png" width="50px" height="50px">
+            </div>
+
+<div class="keys-container" >
+                        <div class="white"><!--Removendo as classes play-->
+                            <div class="key"><audio id="DO"   src="Notas/DO.ogg"></audio></div>
+                            <div class="key"><audio id="RE"   src="Notas/RE.ogg"></audio></div>
+                            <div class="key"><audio id="MI"   src="Notas/MI.ogg"></audio></div>
+                            <div class="key"><audio id="FA"   src="Notas/FA.ogg"></audio></div>
+                            <div class="key"><audio id="SOL"   src="Notas/SOL.ogg"></audio></div>
+                            <div class="key"><audio id="LA"   src="Notas/LA.ogg"></audio></div>
+                            <div class="key"><audio id="SI"  src="Notas/SI.ogg"></audio></div>
+
+                            <div class="key"><audio id="SI"   src="Notas/SI.ogg"></audio></div>
+
+                            <div class="key"><audio id="DO"   src="Notas/DO.ogg"></audio></div>   
+
+                            <div class="key"><audio id="DO"   src="Notas/DO.ogg"></audio></div>
+
+                            <div class="key"><audio id="RE"  src="Notas/RE.ogg"></audio></div>
+                            <div class="key"><audio id="RE"  src="Notas/RE.ogg"></audio></div>
+                            <div class="key"><audio id="MI"  src="Notas/MI.ogg"></audio></div>
+                            <div class="key"><audio id="FA"  src="Notas/FA.ogg"></audio></div>
+                            <div class="key"><audio id="SOL"  src="Notas/SOL.ogg"></audio></div>
+                            <div class="key"><audio id="LA"  src="Notas/LA.ogg"></audio></div>
+                            <div class="key"><audio id="SI"  src="Notas/SI.ogg"></audio></div>
+                        </div>
+                        <div class="black">
+                            <div class="key"></div>
+                            <div class="key"></div>
+                            <div class=""></div>
+                            <div class="key"></div>
+                            <div class="key"></div>
+                            <div class=""></div>
+                            <div class="key"></div>
+                            <div class="key"></div>
+                            <div class="key"></div>
+                            <div class=""></div>
+                            <div class="key"></div>
+                            <div class="key"></div>
+                            <div class=""></div>
+                            <div class="key"></div>
+                            <div class="key"></div>
+                            <div class="key"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</section>
+
+<section id="body" >
+<canvas style="max-height:600px;min-height: 400px;"></canvas>
+
+<!--Inserção do menu-->
+<div class="menu-wrapper" >
+    <div class="menu__toggler">
+        <span></span>
+    </div>
+</div>
+
+<div class="menu" style="height: 50vh;">
+    <p><img src="Menu-icon/rcat1.png" style="width: 30px;height: 30px;"></p> 
+    <p><img src="Menu-icon/rcat2.png" style="width: 30px;height: 30px;"></p>
+    <p><img src="Menu-icon/rcat3.png" style="width: 30px;height: 30px;"></p>
+</div>
+<!--Fechamento do menu-->
+
+<!--card1-->
+<div class="card mola1" id="card1" >
+    <div class="ImgCard" id="img1" id="youtubePlayerContainer"> 
+    </div>
+
+
+<div id="botao" class="play-pause"><!--img1-->
+
+    <div class="track-info">
+        <div id="track-artist"><b>Space Cat</b></div>
+
+
+        <div id="audio-container">
+            <audio id="meuAudio1" class="audio-player" src="Áudio/Gatos-_cantando-no-espaço.ogg"></audio>
+            <div id="track-title">"Gatos cantando no espaço"</div>
+
+
+            <div class="container" >
+                <div id="timer1">00:00</div>
+                <button id="button" onclick="alternarFuncao()" class="play primeiro player"></button>
+                
+            </div>
+            
+
+    <div class="progress-bar" style="text-align: center;"><i>Scroll to <b>mute</b></i>
+        <br><input type="range" id="progressBar1" min="0" max="1" value="1" />
+    </div>
+    <!--OBS-->
+            
+        </div>
+    </div>
+</div>
+</div>
+
+<!---->
+<div class="card mola" id="card2"><div class="ImgCard" id="img2"></div>
+<d id="botao" class="play-pause">
+    <br>
+
+    <div class="track-info">
+        <div id="track-artist"><b>Gato da banda</b></div>
+
+<audio id="meuAudio2" style="width: 500px;"  src="Áudio/remix-gato-cantando_-Anderson-bass-solo-.ogg"></audio>
+        <div id="track-title">"Solo"</div>
+    </div>
+
+
+<!--Vendo se dá para botar essa coisinha-->
+<div id="audio-container">
+<div class="container" style="text-align: center;">
+    <div id="timer2">00:00</div>
+    <button id="button" onclick="alternarFuncao()" class="play segundo player"></button>
+    
+</div>
+    
+<i>Scroll to <b>mute</b>
+    <div class="progress-bar">
+        <input type="range" id="progressBar2" min="0" max="1" value="1" />
+        </div>
+    
+    </div> 
+</div>
+
+</div>
+<!------------------------------------------------------------------------------------------>
+<div class="card mola2" id="card3"><div class="ImgCard" id="img3"></div>
+<div id="botao" class="play-pause">
+
+
+    <div class="track-info" >
+        <div id="track-artist"><b>Billie Cat</b></div>
+<!-------------->
+<div id="audio-container">
+    <audio id="meuAudio3" class="audio-player" src="Áudio/Billie-Eilish_-Khalid-lovely-_cover-by-Bongo-Cat.ogg"></audio>
+    <div id="track-title">"Khalid lovely"</div>
+
+<!------------>
+<div class="container">
+    <div id="timer3">00:00</div>
+    <button id="button" class="play terceiro player"></button>
+</div>
+
+<i>Scroll to <b>mute</b>
+    <div class="progress-bar">
+        <input type="range" id="progressBar3" min="0" max="1" value="1" />
+        </div>
+
+</div>
+<!---->
+</section>
+<section id="footer">
+    <h1 style="padding-top: 10px;width: 40%;">
+        
+            <span data-text="Era uma vez">Era uma vez</span>
+            <span data-text=""></span>
+            <span data-text=""></span>
+            <span data-text=""></span>
+            <span data-text=""></span>
+            <span data-text=""></span>
+        
+        <span id="span"><img src="images/paw.png" style="width: 60px; height: 60px;"></span>
+        </p>
+    </h1>
+</section>
+<!--link do script-->
+<script src="main.js"></script>
+<script>
+console.log("diz oi");
+
+var buttons = document.querySelectorAll('button.play');//ok
+console.log(buttons)//ok
+    //---------------------------------------------------------------------
+
+// Seleção do botão 1
+const button1 = document.querySelector('.primeiro');
+button1.addEventListener('click', function() {
+    alternarFuncao('timer1');
+});
+
+// Seleção do botão 2
+const button2 = document.querySelector('.segundo');
+button2.addEventListener('click', function() {
+    alternarFuncao('timer2');
+});
+
+// Seleção do botão 3
+const button3 = document.querySelector('.terceiro');
+button3.addEventListener('click', function() {
+    alternarFuncao('timer3');
+});
+
+// Função Js contador
+let timers = {};
+
+function alternarFuncao(timerId) {
+    if (timers[timerId]) {
+        limparContador(timerId);
+        console.log("limpar");
+    } else {
+        startTimer(timerId);
+        console.log("startar");
+    }
+}
+
+function startTimer(timerId) {
+    let second = 0,
+        minute = 0,
+        hour = 0;
+
+    timers[timerId] = setInterval(function() {
+        document.getElementById(timerId).classList.toggle('odd');
+        document.getElementById(timerId).innerHTML =
+            (hour ? hour + ':' : '') +
+            (minute < 10 ? '0' + minute : minute) +
+            ':' +
+            (second < 10 ? '0' + second : second);
+
+        second++;
+
+        if (second === 60) {
+            minute++;
+            second = 0;
+        }
+
+        if (minute === 60) {
+            hour++;
+            minute = 0;
+        }
+
+    }, 1000);
+}
+
+function limparContador(timerId) {
+    clearInterval(timers[timerId]);
+    delete timers[timerId];
+    document.getElementById(timerId).innerHTML = '00:00';
+}
+
+
+
+//função
+function onChange(local) {//abertura
+var buttonElement = local.target;//target
+
+//A mudança de classe está funcionando,modifica o botão
+const isPlayButton = buttonElement.classList.contains('play');
+
+var meuAudio1 = document.querySelector('audio#meuAudio1');
+var meuAudio2 = document.querySelector('audio#meuAudio2');
+var meuAudio3 = document.querySelector('audio#meuAudio3');
+
+
+    if (isPlayButton && meuAudio1.paused && buttonElement.classList.contains('primeiro')) {
+        buttonElement.classList.remove('play');
+        buttonElement.classList.add('pause');
+        
+        meuAudio1.play();
+        meuAudio2.pause();
+        meuAudio3.pause();
+
+    } else if (isPlayButton && meuAudio2.paused && buttonElement.classList.contains('segundo')) {
+        buttonElement.classList.remove('play');
+        buttonElement.classList.add('pause');
+        meuAudio2.play();
+        
+        meuAudio1.pause();
+        meuAudio3.pause();
+
+    } else if (isPlayButton && meuAudio3.paused && buttonElement.classList.contains('terceiro')) {
+        buttonElement.classList.remove('play');
+        buttonElement.classList.add('pause');
+        meuAudio3.play();
+        meuAudio1.pause();
+        meuAudio2.pause();
+    } else {
+        meuAudio1.pause();
+        meuAudio2.pause();
+        meuAudio3.pause();
+        buttonElement.classList.remove('pause');
+        buttonElement.classList.add('play');
+        
+    }
+console.log("inside");
+}
+
+buttons.forEach(function(event) {
+        event.addEventListener('click', onChange);
+});
+
+
+//Outra função: adc o som das teclas
+var keys = document.getElementsByClassName('key'); // Seleciona as teclas
+    for (var i = 0; i < keys.length; i++) {
+    keys[i].addEventListener('click', function() {
+        var audioId = this.querySelector('audio').id;
+        var audioElement = document.getElementById(audioId);
+
+        audioElement.currentTime = 0; // Define o tempo de reprodução como zero (reinicia o áudio)
+    audioElement.play();
+    });
+    }
+//definindo variáveis do menu
+const toggler = document.querySelector('.menu__toggler');
+const menu= document.querySelector('.menu');
+/*
+* Toggles on and off the 'active' class on the menu
+* and the toggler button.
+*/
+toggler.addEventListener('click', () => {
+    toggler.classList.toggle('active');
+    menu.classList.toggle('active');
+    })
+
+//-------------------------------------------------------------------------
+// Obtenha os elementos de áudio
+var meuAudio1 = document.querySelector('audio#meuAudio1');
+var meuAudio2 = document.querySelector('audio#meuAudio2');
+var meuAudio3 = document.querySelector('audio#meuAudio3');
+
+// Obtenha os elementos de input range
+var volumeRange1 = document.getElementById('progressBar1');
+var volumeRange2 = document.getElementById('progressBar2');
+var volumeRange3 = document.getElementById('progressBar3');
+
+    // Defina uma função de callback para atualizar o volume dos áudios
+    function updateVolume(audio, volume) {
+    audio.volume = volume;
+    }
+
+    // Adicione um ouvinte de evento ao input range para monitorar as mudanças
+    volumeRange1.addEventListener('input', function() {
+    var volume1 = parseFloat(volumeRange1.value);
+    updateVolume(meuAudio1, volume1);
+    console.log(volume1);
+    });
+
+    volumeRange2.addEventListener('input', function() {
+    var volume2 = parseFloat(volumeRange2.value);
+    updateVolume(meuAudio2, volume2);
+    console.log(volume2);
+    });
+
+    volumeRange3.addEventListener('input', function() {
+    var volume3 = parseFloat(volumeRange3.value);
+    updateVolume(meuAudio3, volume3);
+    console.log(volume3);
+    });
+
+</script>
+
+<script src="scripts/link.min.js"></script>
+</body>
+</html>
