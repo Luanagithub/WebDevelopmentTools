@@ -11,8 +11,17 @@
   ],
   "routes": [
     {
+      "src": "/styles/(.*)", // Mapeia qualquer solicitação para /styles/ para a pasta dist/styles
+      "dest": "/dist/styles/$1"
+    },
+    {
+      "src": "/scripts/(.*)", // Mapeia qualquer solicitação para /scripts/ para a pasta dist/scripts
+      "dest": "/dist/scripts/$1"
+    },
+    {
       "src": "/(.*)",
       "dest": "/"
     }
   ]
 }
+
